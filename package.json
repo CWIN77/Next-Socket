@@ -1,0 +1,37 @@
+{
+  "name": "cutom-next",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm run open && next dev -p 8080",
+    "build": "next build",
+    "export": "next export",
+    "start": "npm run open && next start -p 8080",
+    "open": "npx kill-port 8080 && start http://localhost:8080/",
+    "setYarnBerry": "npm install -g yarn && yarn set version berry && yarn install && yarn add react-is && yarn add @yarnpkg/sdks -D && yarn dlx @yarnpkg/sdks vscode"
+  },
+  "dependencies": {
+    "@next/font": "latest",
+    "axios": "^1.1.3",
+    "babel-plugin-styled-components": "latest",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-is": "^18.2.0",
+    "socket.io": "^4.5.3",
+    "socket.io-client": "^4.5.3",
+    "styled-components": "latest"
+  },
+  "devDependencies": {
+    "@svgr/webpack": "latest",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@types/styled-components": "latest",
+    "@yarnpkg/sdks": "^3.0.0-rc.30",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "typescript": "latest"
+  },
+  "packageManager": "yarn@3.3.0"
+}
