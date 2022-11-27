@@ -31,7 +31,7 @@ export default function Chat() {
   useEffect((): any => {
     getUserMedia();
 
-    const socket = connect("http://localhost:4000", {
+    const socket = connect("https://next-socket.vercel.app", {
       path: "/api/chat/socketio",
     });
     setSocket(socket);
